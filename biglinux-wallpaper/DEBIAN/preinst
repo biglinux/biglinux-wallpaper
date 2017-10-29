@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+package_name=biglinux-wallpaper
+
+if [ ! -e "/usr/share/wallpapers/BigLinux" ]; then
+    ln -s /usr/share/wallpapers/deepin/ /usr/share/wallpapers/BigLinux
+fi
+
+
+exit 0
